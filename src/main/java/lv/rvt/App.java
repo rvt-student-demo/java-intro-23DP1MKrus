@@ -1,32 +1,18 @@
 package lv.rvt;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class App 
-{
-    public static void main( String[] args )
-    {
-        long lastId = -1;
-        try (BufferedReader reader = Utils.getReader("data.csv")) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        try (BufferedWriter writter = Utils.getWriter("data.csv")) {
-            // writter.newLine();
-            // writter.write("2, user, 123");
-            // writter.flush();
-        
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
+public class App {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your group:");
+        String group = scanner.nextLine();
+        System.out.println("Please enter your name:");
+        String name = scanner.nextLine();
+        System.out.println("Please enter your last name:");
+        String lastName = scanner.nextLine();
+        System.out.println("Hello" + name + lastName  + "from" + group + "group!");
 
     }
-
 }
