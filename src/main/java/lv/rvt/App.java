@@ -8,7 +8,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give speed:" );
         int ticket = scanner.nextInt();
-        if(ticket >= 120){
+        if(ticket > 120){
             System.out.println("Speeding ticket!");
         }
 
