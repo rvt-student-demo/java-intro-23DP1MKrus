@@ -18,11 +18,21 @@ public class App {
         }
 
     }
+    public static void printRectangle(int width,int height) {
+        for (int i = 0; i < height; i++) {
+            printStars(width);
+
+
+        }
+
+    }
+
     public static void main(String[] args) {
 
 //    printStars(5);
 //    printStars(5);
-        printSquare(4);
+//        printSquare(4);
+        printRectangle(17,3);
 
 
     }
