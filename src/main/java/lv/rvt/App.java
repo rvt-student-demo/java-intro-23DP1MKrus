@@ -26,13 +26,21 @@ public class App {
         }
 
     }
+    public static void printTriangle(int size) {
+        for (int i = 1; i < size+1; i++) {
+            printStars(i);
 
+
+        }
+
+    }
     public static void main(String[] args) {
 
 //    printStars(5);
 //    printStars(5);
 //        printSquare(4);
-        printRectangle(17,3);
+//        printRectangle(17,3);
+        printTriangle(4);
 
 
     }
